@@ -1,0 +1,9 @@
+#!/bin/bash -x
+
+echo "Preparing TOMCAT_HOME..."
+# Move directories that ship in the package into place
+cp -a {{pkgPathFor "core/tomcat8"}}/tc {{pkg.svc_var_path}}/
+
+cp {{pkg.path}}/*.war {{pkg.svc_var_path}}/tc/webapps
+export TOMCAT_HOME="{{pkgPathFor "core/tomcat8"}}/tc"
+cp  {{pkg.svc_config_path}}/calc.html ${TOMCAT_HOME}/webapps/calc.html

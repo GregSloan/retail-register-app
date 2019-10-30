@@ -1,0 +1,45 @@
+# Jave related
+target/**
+*.jar
+*.war
+*.ear
+*.class
+
+# eclipse specific
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+  
+.DS_Store
+.tags*
+.vscode
+Dockerfile
+log/
+results/
+tmp/
+tags
+*.lock.*
+
+*.keys
+*.license
+*.creds
+*.swp
+.idea

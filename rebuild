@@ -1,0 +1,5 @@
+build
+hab svc unload gsloan-chef/retail-register-app
+source results/last_build.env
+sleep 2
+hab svc load $pkg_ident

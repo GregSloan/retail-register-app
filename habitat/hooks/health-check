@@ -1,0 +1,8 @@
+#!/bin/sh
+ 
+if test -f /hab/logs/register.log; then
+	echo "Register App Log Too Large (/hab/logs/register.log)"
+	exit 1
+fi
+echo "Health Check Passed"
+exit 0

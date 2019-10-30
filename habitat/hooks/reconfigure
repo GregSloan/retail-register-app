@@ -1,0 +1,2 @@
+export TOMCAT_HOME="{{pkgPathFor "core/tomcat8"}}/tc"
+cp  {{pkg.svc_config_path}}/calc.html ${TOMCAT_HOME}/webapps/calc.html
