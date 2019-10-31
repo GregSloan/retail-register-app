@@ -20,7 +20,7 @@ local.properties
 .classpath
 .settings/
 .loadpath
-build.xmlg
+build.xml
 
 # External tool builders
 .externalToolBuilders/
