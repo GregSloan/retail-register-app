@@ -23,6 +23,7 @@ do_build()
     ant clean
     ant build
     cp -rf build/classes WebContent/WEB-INF
+    mkdir WebContent/WEB-INF/lib
 
     
     cd ${HAB_CACHE_SRC_PATH}/${pkg_dirname}/WebContent
