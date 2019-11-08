@@ -19,6 +19,8 @@ do_build()
 {
     cp -r $PLAN_CONTEXT/../ $HAB_CACHE_SRC_PATH/$pkg_dirname
     cd ${HAB_CACHE_SRC_PATH}/${pkg_dirname}
+    mkdir WebContent/WEB-INF
+    mkdir WebContent/classes
     sed -e "s:{*tomcat-path}*:$(hab pkg path core/tomcat8):g" build_template.xml > build.xml
     ant clean
     ant build
